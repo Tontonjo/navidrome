@@ -1,0 +1,16 @@
+# Command to quick start a navidrome docker container 
+# EXAMPLE: correct with your settings
+# docker run -d \
+# --name navidrome \
+# -v /sharedfolders/share/medias/music:/music \
+# -v /sharedfolders/docker/navidrome:/data \
+#    HOST:CONTAINER (dont change container port if you dont know what you are doing)
+# -p 4533:4533 \
+# deluan/navidrome:latest
+
+docker run -d \
+--name navidrome \
+-v /path/to/music:/music \
+-v /path/to/data:/data \
+-p 4533:4533 \
+deluan/navidrome:latest
