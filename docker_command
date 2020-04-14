@@ -10,6 +10,7 @@
 
 docker run -d \
 --name navidrome \
+--restart=unless-stopped \
 -v /path/to/music:/music \
 -v /path/to/data:/data \
 -p 4533:4533 \
